@@ -8,8 +8,26 @@
   </head>
   <body>
     <header>
-      <h1>Mergington High School</h1>
-      <h2>Extracurricular Activities</h2>
+      <div class="header-content">
+        <div>
+          <h1>Mergington High School</h1>
+          <h2>Extracurricular Activities</h2>
+        </div>
+        <div class="account-area">
+          <button id="account-button" class="account-button" type="button" aria-label="Open teacher login">&#128100;</button>
+          <div id="account-panel" class="account-panel hidden">
+            <form id="login-form">
+              <label for="username">Teacher username</label>
+              <input type="text" id="username" required autocomplete="username" />
+              <label for="password">Password</label>
+              <input type="password" id="password" required autocomplete="current-password" />
+              <button type="submit">Log in</button>
+            </form>
+            <button id="logout-button" class="hidden" type="button">Log out</button>
+            <p id="auth-message" role="status"></p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
